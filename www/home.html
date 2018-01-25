@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Toko Online</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<link rel="stylesheet" type="text/css" href="css/snap.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link rel="stylesheet" href="android.css" type="text/css"/>
+<link rel="stylesheet" href="css/owl.carousel.css">     
+<link rel="stylesheet" href="css/owl.theme.css">
+<link rel="stylesheet" href="jquery-ui.css">
+<script type="text/javascript" language="javascript" src="jquery.min.js"></script>
+<script src="cordova.js"></script>
+<script type="text/javascript" language="javascript" src="function.js"></script>
+</head>
+<body onload="onload()">
+	<div id="layang">
+		<div id="logo"><img src="image/logo.png" width="100" height="100"></div>
+		<div class="nama_app"><table width="100%" height="45px" border="0"><tr>
+		<td style="vertical-align:middle" align="left" valign="middle"><div id="nama_aplikasi"></div></td></tr></table></div>
+		<div class="logo_menu" ><img src="image/pesan.png" class="icon_pesan" onclick="buka_pesan()"></div>
+	</div>
+
+		<div id="content" class="snap-content">
+		<div id="isi">
+
+		</div>
+		</div>
+		<div class="snap-drawers">
+            <div id="menu_kiri" class="snap-drawer snap-drawer-left"></div>
+            <div id="menu_kanan" class="snap-drawer snap-drawer-right"></div>
+        </div>
+        <div id="navbawah">
+                <ul>
+	                <li id="border"><a href="javascript:;" id="open-left"><img src="image/menu.png"/></a></li>
+	                <li id="border"><a href="javascript:;" onclick="buka_halaman('kategori')"><img src="image/produk.png"class="icon_produk"/></a></li>
+	                <li id="border"><a href="javascript:;" onclick="buka_halaman('informasi')"><img src="image/info.png" class="icon_info" /></a></li>
+	                <li id="border"><a href="javascript:;" onclick="buka_keranjang()"><img src="image/keranjang.png" class="icon_keranjang" /></a></li>
+	                <li><a href="javascript:;" id="open-right"><img src="image/lainnya.png"/></a></li>
+                </ul>
+        </div>
+		<script src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/snap.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
+		<div id="loading"><div class="android"></div></div>
+</body>
+</html>
